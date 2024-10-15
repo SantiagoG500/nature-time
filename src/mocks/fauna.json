@@ -1,0 +1,133 @@
+{
+  "Amazonas": [
+    {
+      "name": "Jaguar",
+      "scientificName": "Panthera onca",
+      "weight": "50 - 100 kg",
+      "alimentation": "Carnívoro; se alimenta de mamíferos grandes como tapires, capibaras, y caimanes"
+    },
+    {
+      "name": "Delfín rosado",
+      "scientificName": "Inia geoffrensis",
+      "weight": "85 - 160 kg",
+      "alimentation": "Carnívoro; consume peces, crustáceos y pequeños animales acuáticos"
+    },
+    {
+      "name": "Mono tití",
+      "scientificName": "Saguinus spp.",
+      "weight": "300 - 500 gramos",
+      "alimentation": "Omnívoro; consume frutas, insectos, pequeños vertebrados y néctar"
+    },
+    {
+      "name": "Anaconda",
+      "scientificName": "Eunectes murinus",
+      "weight": "Hasta 250 kg",
+      "alimentation": "Carnívora; se alimenta de peces, mamíferos, aves e incluso caimanes"
+    },
+    {
+      "name": "Guacamayo azul",
+      "scientificName": "Ara ararauna",
+      "weight": "1 - 1.5 kg",
+      "alimentation": "Frugívoro; se alimenta de frutas, nueces y semillas"
+    }
+  ],
+  "Orinoquía": [
+    {
+      "name": "chigüiro",
+      "scientificName": "Hydrochoerus hydrochaeris",
+      "weight": "35 - 65 kg",
+      "alimentation": "35 - 65 kg"
+    },
+    {
+      "name": "Caimán del Orinoco",
+      "scientificName": "Crocodylus intermedius",
+      "weight": "35 - 65 kg",
+      "alimentation": "380 - 450 kg"
+    },
+    {
+      "name": "Armadillo",
+      "scientificName": "Dasypus novemcinctus",
+      "weight": "4 - 8 kg",
+      "alimentation": "380 - 450 kg"
+    },
+    {
+      "name": "Aguila Harpía",
+      "scientificName": "Harpia harpyja",
+      "weight": "6 - 10 kg",
+      "alimentation": "380 - 450 kg"
+    },
+    {
+      "name": "Venado de cola blanca",
+      "scientificName": "Odocoileus virginianus",
+      "weight": "6 - 10 kg",
+      "alimentation": "50 - 120 kg"
+    }
+  ],
+  "Pácifico": [
+    {
+      "name": "Ballena jorobada",
+      "scientificName": "Megaptera novaeangliae",
+      "weight": "40 T",
+      "alimentation": "40 T"
+    },
+    {
+      "name": "Rana de cristal",
+      "scientificName": "Hyalinobatrachium fleischmanni",
+      "weight": "1 - 2 g",
+      "alimentation": "40 T"
+    },
+    {
+      "name": "Tortuga carey",
+      "scientificName": "Eretmochelys imbricata",
+      "weight": "80 kg",
+      "alimentation": "40 T"
+    },
+    {
+      "name": "Perezoso de dos dedos",
+      "scientificName": "Choloepus didactylus",
+      "weight": "4 - 8 kg",
+      "alimentation": "40 T"
+    }
+  ],
+  "Caribe": [
+    {
+      "name": "Manatí",
+      "scientificName": "Trichechus manatus",
+      "weight": "400 - 600 kg",
+      "alimentation": "40 T"
+    },
+    {
+      "name": "Iguana verde",
+      "scientificName": "Iguana iguana",
+      "weight": "4 - 5  kg",
+      "alimentation": "40 T"
+    },
+    {
+      "name": "Flamenco rosado",
+      "scientificName": "Alouatta seniculus",
+      "weight": "5 - 10 kg",
+      "alimentation": "40 T"
+    },
+    {
+      "name": "Tigrillo",
+      "scientificName": "Leopardus wiedii",
+      "weight": "2 - 4 kg",
+      "alimentation": "40 T"
+    }
+  ],
+  "Andes": [
+    {
+      "name": "Cóndor de los Andes",
+      "scientificName": "Vultur gryphus",
+      "weight": "10 - 15 kg",
+      "alimentation": "40 T"
+    },
+    {
+      "name": "Oso de anteojos",
+      "scientificName": "Tremarctos ornatus",
+      "weight": "100 - 175 kg",
+      "alimentation": "40 T"
+    }
+
+  ]
+}
