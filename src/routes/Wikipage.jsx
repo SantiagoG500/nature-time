@@ -1,8 +1,6 @@
+import sanitizeHtml from 'sanitize-html'
+
 import { useLoaderData } from 'react-router-dom'
-
-import DOMPurify from 'dompurify'
-import { JSDOM } from 'jsdom'
-
 import { useEffect, useRef } from 'react'
 
 export default function WikiPage () {
@@ -16,13 +14,9 @@ export default function WikiPage () {
   const pageInfo = dataInfo[0][1]
   const { title, extract } = pageInfo
 
-  const window = new JSDOM('').window
-  const purify = DOMPurify(window)
-
-  const sanitizedHTML = purify.sanitize(extract)
-
   useEffect(() => {
-    sectionRef.current.innerHTML = sanitizedHTML
+    const cleanExtract = sanitizeHtml(extract)
+    sectionRef.current.innerHTML = cleanExtract
   }, [])
 
   return (
