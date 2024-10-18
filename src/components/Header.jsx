@@ -1,38 +1,6 @@
 import { Link } from 'react-router-dom'
-import { useRef, useState } from 'react'
-
-import { Moon, Sun } from 'lucide-react'
-
-function ToggleThemeButton () {
-  const [themeDark, setThemeDark] = useState(true)
-
-  const toggleTheme = () => {
-    const body = document.body
-
-    if (themeDark) {
-      body.classList.remove('dark')
-      body.classList.add('light')
-
-      setThemeDark(false)
-    } else {
-      body.classList.remove('light')
-      body.classList.add('dark')
-
-      setThemeDark(true)
-    }
-  }
-
-  return (
-
-    <button onClick={toggleTheme}>
-      {
-      themeDark
-        ? <Sun className='text-color-primary' />
-        : <Moon />
-    }
-    </button>
-  )
-}
+import { useRef } from 'react'
+import ToggleThemeButton from './ToggleThemeButton'
 
 export default function Header () {
   const themeButtonRef = useRef(null)
@@ -41,15 +9,35 @@ export default function Header () {
   const toggleNavVisibility = () => {
     navRef.current.classList.toggle('hidden')
   }
+  //  sticky top-2
+  //  md:w-auto md:max-w-screen-sm m-auto
 
+  // sticky top-4 left-1/2 transform -translate-x-1/2
   return (
-    <header className='flex justify-between p-4 md:w-auto md:max-w-screen-sm m-auto sticky top-2 rounded bg-background-secondary/55 backdrop-blur-md'>
+    <header className='
+      sticky top-3
+      w-11/12 max-w-screen-md
+      m-auto
+      p-4
+      flex justify-between
+      rounded
+      bg-background-secondary/55 backdrop-blur-md
+    '
+    >
       <div className=''>
         <a className='text-color-primary'>Logo</a>
       </div>
 
-      <div className='relative flex  gap-4'>
-        <nav className='hidden space-x-4 absolute right-0 top-full sm:flex sm:relative sm:top-0 ' ref={navRef}>
+      <div className='flex  gap-4'>
+        <nav
+          className='
+            hidden space-x-4 absolute right-0 top-full
+            sm:flex sm:relative sm:top-0
+            sm:bg-transparent sm:backdrop-blur-0
+            bg-background-secondary/55 backdrop-blur-md
+          '
+          ref={navRef}
+        >
           <ul className='flex flex-col items-center pt-4 pb-4 w-60 sm:flex-row sm:p-0 sm:justify-evenly gap-6'>
             <li>
               <Link

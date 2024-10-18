@@ -2,21 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @layer base {
-  :root {
-    --color-bg-primary: 28, 25, 23;
-    --color-bg-secondary: 41, 37, 36;
-    --color-bg-tertiary: 68, 64, 60;
-
-    --color-text-primary: 231, 229, 228;
-    --color-text-secondary: 28, 25, 23;
-
-    --color-text-primary-lighter: 214, 211, 209;
-    --color-text-secondary-lighter: 41, 37, 36;
-    
-    --color-text-emphasis: 34, 197, 94;
-  }
-} */
+:root {
+  --color-text-emphasis-50: 240, 253, 244;
+  --color-text-emphasis-100: 220, 252, 231;
+  --color-text-emphasis-200: 187, 247, 208;
+  --color-text-emphasis-300: 134, 239, 172;
+  --color-text-emphasis-400: 74, 222, 128;
+  --color-text-emphasis-500: 34, 197, 94;
+  --color-text-emphasis-600: 22, 163, 74;
+  --color-text-emphasis-700: 21, 128, 61;
+  --color-text-emphasis-800: 22, 101, 52;
+  --color-text-emphasis-900: 20, 83, 45;
+  --color-text-emphasis-950: 5, 46, 22;
+}
 
 .dark {
   --color-bg-primary: 28, 25, 23;
@@ -41,8 +39,6 @@
 
   --color-text-primary-lighter: 120, 113, 108;
   --color-text-secondary-lighter: 214, 211, 209;
-  
-  --color-text-emphasis: 34, 197, 94;
 }
 
 /* --main-color-50: 250, 250, 249;
