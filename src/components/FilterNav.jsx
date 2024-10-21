@@ -2,8 +2,9 @@ export function FilterNav ({ regionNames, currentRegion, updateRegion }) {
   return (
     <nav className='
       flex justify-center gap-5 p-4
-      md:max-w-screen-sm
+      ñmd:max-w-screen-sm
       m-auto
+      pl-24
       bg-background-secondary
       overflow-auto
       rounded

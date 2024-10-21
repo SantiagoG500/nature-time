@@ -12,7 +12,7 @@ export default function NatureInfoContainer ({ region }) {
           {regionName}
         </h1>
 
-        <div className='flex flex-wrap justify-center gap-5'>
+        <div className='flex flex-wrap justify-center gap-5 pl-2 pr-2'>
           <NatureCard natureInfo={natureInfo} />
         </div>
       </div>

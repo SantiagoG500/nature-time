@@ -9,7 +9,7 @@ export default function NatureCard ({ natureInfo }) {
             <div
               className={
                 `
-                  bg-background-secondary p-4 w-96 md:w-96 rounded shadow-custom-dark
+                  bg-background-secondary p-4 min-w-80 md:w-96 rounded shadow-custom-dark
                   flex flex-col items-center
                   hover:bg-background-emphasis-200
                   hover:shadow-color-emphasis-200
