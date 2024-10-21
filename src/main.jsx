@@ -8,13 +8,17 @@ import {
   Route,
   RouterProvider
 } from 'react-router-dom'
+
 import ErrorBoundary from './routes/Error-page'
 import About from './routes/About'
 import Root from './routes/Root'
-import { Home } from './routes/Home'
+import Home from './routes/Home'
 import AppLayout from './routes/layout/AppLayout'
 import WikiPage from './routes/Wikipage'
+import Quiz from './routes/Quiz'
+
 import { WikipediaLoader } from './loaders/WikipediaLoader'
+import Results from './routes/Results'
 
 const root = createRoot(document.getElementById('app'))
 const router = createBrowserRouter(
@@ -31,6 +35,14 @@ const router = createBrowserRouter(
           path='wiki/'
           element={<WikiPage />}
           loader={WikipediaLoader}
+        />
+        <Route
+          path='quiz/'
+          element={<Quiz />}
+        />
+        <Route
+          path='results/'
+          element={<Results />}
         />
       </Route>
     </>

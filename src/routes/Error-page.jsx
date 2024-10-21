@@ -15,7 +15,7 @@ export default function ErrorBoundary () {
           alt='this is fine gif'
           className=''
         />
-        <Link to='home/' className='text-color-primary'>Go back to the Home page</Link>
+        <Link to='/' className='text-color-primary hover:text-color-emphasis-500'>Go back to the Home page</Link>
       </div>
     </div>
   )

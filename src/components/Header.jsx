@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useRef } from 'react'
 import ToggleThemeButton from './ToggleThemeButton'
+import { Home } from 'lucide-react'
 
 export default function Header () {
   const themeButtonRef = useRef(null)
@@ -9,10 +10,7 @@ export default function Header () {
   const toggleNavVisibility = () => {
     navRef.current.classList.toggle('hidden')
   }
-  //  sticky top-2
-  //  md:w-auto md:max-w-screen-sm m-auto
 
-  // sticky top-4 left-1/2 transform -translate-x-1/2
   return (
     <header className='
       sticky top-3
@@ -25,10 +23,12 @@ export default function Header () {
     '
     >
       <div className=''>
-        <a className='text-color-primary'>Logo</a>
+        <Link to='/'>
+          <p className='text-color-primary'>Logo</p>
+        </Link>
       </div>
 
-      <div className='flex  gap-4'>
+      <div className='flex gap-4'>
         <nav
           className='
             hidden space-x-4 absolute right-0 top-full

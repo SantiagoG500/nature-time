@@ -1,0 +1,69 @@
+{
+  "questions": [
+    {
+      "questionContext": {
+        "question": "Which animal from Amazonas weights about 300 - 500 g?",
+        "image": ""
+      },
+      "answers": [
+        "Tití",
+        "Jaguar",
+        "Blue parrot",
+        "Anaconda"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "questionContext": {
+        "question": "What is the scientific name of this animal?",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Capivara%28Hydrochoerus_hydrochaeris%29.jpg/1024px-Capivara%28Hydrochoerus_hydrochaeris%29.jpg"
+      },
+      "answers": [
+        "Chiguiro",
+        "Capybara",
+        "Hydrochoerus hydrochaeris",
+        "Robert"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "questionContext": {
+        "question": "What is the scientific name of this animal?",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/61/Humpback_Whale_underwater_shot.jpg"
+      },
+      "answers": [
+        "Eunectes murinus",
+        "Whale",
+        "Ara ararauna",
+        "Megaptera novaeangliae"
+      ],
+      "correctAnswerIndex": 3
+    },
+    {
+      "questionContext": {
+        "question": "In what region the Eretmochelys imbricata (Tortuga carey in Colombia) is seen?",
+        "image": ""
+      },
+      "answers": [
+        "Orinoquía natural region",
+        "Amazon natural region",
+        "Pacific region",
+        "Caribbean region"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "questionContext": {
+        "question": "Which animal from the Pacific region weights about 40 t?",
+        "image": ""
+      },
+      "answers": [
+        "Humpback whale",
+        "Green Iguana",
+        "Capybara",
+        "Choloepus"
+      ],
+      "correctAnswerIndex": 4
+    }
+  ]
+}

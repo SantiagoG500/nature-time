@@ -8,9 +8,9 @@ export default function AppLayout ({ children }) {
   return (
     <ThemeProvider>
       <NatureContext>
-        <div className='h-screen bg-back t-'>
+        <div className='h-screen'>
           <Header />
-          <main id='content' className='min-h-screen w-11/12 m-auto  pb-12'>
+          <main id='content' className='min-h-screen w-11/12 m-auto pb-12'>
             {children ?? <Outlet />}
           </main>
         </div>

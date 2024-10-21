@@ -63,6 +63,7 @@ describe('Append and prepend', () => {
     expect(linkedList.head().value).toBe(3)
   })
 })
+
 describe('toString', () => {
   test('should return a linked list acording to a given array', () => {
     const linkedList = DoubleLinkedList()
@@ -75,6 +76,7 @@ describe('toString', () => {
     expect(linkedList.toString()).toBe(expectedString)
   })
 })
+
 describe('At', () => {
   test('should return the correct node with the given index', () => {
     const linkedList = DoubleLinkedList()
@@ -95,7 +97,17 @@ describe('At', () => {
 
     expect(linkedList.at(2).value).toBe(1)
   })
+
+  test('Should stay ad the last item if the index does not exist', () => {
+    const linkedList = DoubleLinkedList()
+    const arr = [1, 2, 3, 4, 5]
+
+    linkedList.fromArray(arr)
+
+    expect(linkedList.at(2).value).toBe(3)
+  })
 })
+
 describe('Find', () => {
   test('should return the correct node with the given search element', () => {
     const linkedList = DoubleLinkedList()
