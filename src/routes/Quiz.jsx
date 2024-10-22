@@ -1,51 +1,33 @@
-import { useState } from 'react'
-import { questions } from '../mocks/questions.json'
-import { QuestionSet } from '../utils/Questions'
-
 import QuizAnswers from '../components/QuizAnswers'
 import QuizPagination from './QuizPagination'
 import QuizQuestionInfo from '../components/QuizQuestionInfo'
-
-function useQuiz () {
-  const [quizQuestions, setQuestions] = useState(QuestionSet({ questions }))
-  const [selected, setSelected] = useState('')
-
-  const handleSelected = ({ answer }) => {
-    if (selected === answer) return
-    setSelected(answer)
-    validateAnswer({ answer })
-  }
-
-  const validateAnswer = ({ answer }) => {
-    quizQuestions.validateAnswer({ answer })
-    setQuestions({ ...quizQuestions })
-  }
-
-  const nextQuestion = () => {
-    quizQuestions.gotoNextQuestion()
-    setQuestions({ ...quizQuestions })
-  }
-  const prevQuestion = () => {
-    quizQuestions.gotoPrevQuestion()
-    setQuestions({ ...quizQuestions })
-  }
-
-  return { quizQuestions, selected, prevQuestion, nextQuestion, handleSelected }
-}
+import { useQuiz } from '../hooks/usequiz'
 
 export default function Quiz () {
-  const { quizQuestions, selected, handleSelected, prevQuestion, nextQuestion } = useQuiz()
-  const indexInfo = { index: quizQuestions.getIndex(), length: quizQuestions.getListLength() }
+  const {
+    quizQuestions,
+    selected,
+    index,
+    length,
+
+    handleSelected,
+    prevQuestion,
+    nextQuestion,
+    endOfQuiz,
+
+    allQuestionsAnswered,
+    atFinalQuestion,
+    answeredQuestions
+  } = useQuiz()
 
   const current = quizQuestions.getCurrentQuestion().value
   const { questionContext } = current
   const userAnswers = quizQuestions.getUserAnswers()
-  const currentAnswer = userAnswers[indexInfo.index]
+  const currentAnswer = userAnswers[index]
 
   return (
     <>
       <section className='mt-7  w-11/12 max-w-screen-lg mr-auto ml-auto'>
-
         <div className='
           flex flex-col items-start
           w-11/12
@@ -57,7 +39,7 @@ export default function Quiz () {
           <QuizQuestionInfo
             question={questionContext.question}
             img={questionContext.image}
-            indexInfo={indexInfo}
+            indexInfo={{ index, length }}
           />
         </div>
 
@@ -77,7 +59,10 @@ export default function Quiz () {
           <QuizPagination
             prevQuestion={prevQuestion}
             nextQuestion={nextQuestion}
-            indexInfo={indexInfo}
+            atFinalQuestion={atFinalQuestion}
+            allQuestionsAnswered={allQuestionsAnswered}
+            endOfQuiz={endOfQuiz}
+            answeredQuestions={answeredQuestions}
           />
 
         </div>

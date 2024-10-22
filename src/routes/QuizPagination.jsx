@@ -1,24 +1,25 @@
 import { ArrowLeft, ArrowRight, Check } from 'lucide-react'
-import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 // Pagination half implemented, It only goes forward and backwards
 
-export default function QuizPagination ({ indexInfo, prevQuestion, nextQuestion }) {
+export default function QuizPagination ({
+  endOfQuiz,
+  prevQuestion,
+  nextQuestion,
+  atFinalQuestion,
+  allQuestionsAnswered
+}) {
   const navigate = useNavigate()
-  const [currentPage, setCurrentPage] = useState(0)
-  const questionsPerPage = 3
-  const questionArr = Array(questionsPerPage).fill()
-
-  const { index, length } = indexInfo
-  const endOfQuiz = index === length - 1
 
   const prev = () => {
     prevQuestion()
   }
 
   const next = () => {
-    if (endOfQuiz) {
+    console.log('asdf')
+
+    if (atFinalQuestion) {
       navigate('/results')
       console.log('end')
     }
@@ -26,7 +27,9 @@ export default function QuizPagination ({ indexInfo, prevQuestion, nextQuestion 
   }
   return (
     <section className='flex gap-8 h-min w-min'>
-
+      <p className='text-color-primary'>{JSON.stringify(atFinalQuestion)}</p>
+      <p className='text-color-primary'>{JSON.stringify(allQuestionsAnswered)}</p>
+      <p className='text-color-primary'> result {JSON.stringify(atFinalQuestion && !allQuestionsAnswered)}</p>
       <button
         className='
         flex items-center justify-center
@@ -61,7 +64,6 @@ export default function QuizPagination ({ indexInfo, prevQuestion, nextQuestion 
           </button>
         ))}
       </div> */}
-
       <button
         className='
         flex items-center justify-center
@@ -76,9 +78,10 @@ export default function QuizPagination ({ indexInfo, prevQuestion, nextQuestion 
         bg-background-secondary
       '
         onClick={next}
+        disabled={endOfQuiz()}
       >
         {
-          endOfQuiz
+          atFinalQuestion
             ? <Check />
             : <ArrowRight />
         }
