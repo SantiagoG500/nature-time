@@ -13,6 +13,8 @@ export function QuizInfoProvider ({ children }) {
     answeredQuestions,
     allQuestionsAnswered,
     atFinalQuestion,
+    correctAnswers,
+    wrongAnswers,
 
     prevQuestion,
     nextQuestion,
@@ -31,6 +33,8 @@ export function QuizInfoProvider ({ children }) {
         answeredQuestions,
         allQuestionsAnswered,
         atFinalQuestion,
+        correctAnswers,
+        wrongAnswers,
 
         prevQuestion,
         nextQuestion,

@@ -1,7 +1,9 @@
+import { useContext } from 'react'
+
 import QuizAnswers from '../components/QuizAnswers'
 import QuizPagination from './QuizPagination'
 import QuizQuestionInfo from '../components/QuizQuestionInfo'
-import { useQuiz } from '../hooks/usequiz'
+import { quizContext } from '../context/QuizInfo'
 
 export default function Quiz () {
   const {
@@ -18,7 +20,23 @@ export default function Quiz () {
     allQuestionsAnswered,
     atFinalQuestion,
     answeredQuestions
-  } = useQuiz()
+  } = useContext(quizContext)
+
+  // const {
+  //   quizQuestions,
+  //   selected,
+  //   index,
+  //   length,
+
+  //   handleSelected,
+  //   prevQuestion,
+  //   nextQuestion,
+  //   endOfQuiz,
+
+  //   allQuestionsAnswered,
+  //   atFinalQuestion,
+  //   answeredQuestions
+  // } = useQuiz()
 
   const current = quizQuestions.getCurrentQuestion().value
   const { questionContext } = current

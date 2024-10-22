@@ -19,6 +19,7 @@ import Quiz from './routes/Quiz'
 
 import { WikipediaLoader } from './loaders/WikipediaLoader'
 import Results from './routes/Results'
+import { QuizInfoProvider } from './context/QuizInfo'
 
 const root = createRoot(document.getElementById('app'))
 const router = createBrowserRouter(
@@ -38,11 +39,19 @@ const router = createBrowserRouter(
         />
         <Route
           path='quiz/'
-          element={<Quiz />}
+          element={
+            <QuizInfoProvider>
+              <Quiz />
+            </QuizInfoProvider>
+          }
         />
         <Route
           path='results/'
-          element={<Results />}
+          element={
+            <QuizInfoProvider>
+              <Results />
+            </QuizInfoProvider>
+          }
         />
       </Route>
     </>

@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useRef } from 'react'
 import ToggleThemeButton from './ToggleThemeButton'
-import { Home } from 'lucide-react'
 
 export default function Header () {
   const themeButtonRef = useRef(null)
@@ -13,16 +12,16 @@ export default function Header () {
 
   return (
     <header className='
-      sticky top-3
-      w-11/12 max-w-screen-md
-      m-auto
-      p-4
-      flex justify-between
-      rounded
-      bg-background-secondary/55 backdrop-blur-md
-    '
+    sticky top-3
+    w-11/12 max-w-screen-md
+    m-auto
+    p-4
+    flex justify-between
+    rounded
+    bg-background-secondary
+  '
     >
-      <div className=''>
+      <div>
         <Link to='/'>
           <p className='text-color-primary'>Logo</p>
         </Link>
@@ -31,18 +30,19 @@ export default function Header () {
       <div className='flex gap-4'>
         <nav
           className='
-            hidden space-x-4 absolute right-0 top-full
-            sm:flex sm:relative sm:top-0
-            sm:bg-transparent sm:backdrop-blur-0
-            bg-background-secondary/55 backdrop-blur-md
-          '
+          hidden space-x-4 absolute right-0 top-full
+          sm:flex sm:relative sm:top-0
+          sm:backdrop-blur-0 sm:bg-transparent
+          backdrop-blur bg-background-secondary
+          rounded
+        '
           ref={navRef}
         >
           <ul className='flex flex-col items-center pt-4 pb-4 w-60 sm:flex-row sm:p-0 sm:justify-evenly gap-6'>
             <li>
               <Link
                 to='/'
-                className=' text-color-primary hover:text-color-emphasis font-semibold'
+                className='text-color-primary hover:text-color-emphasis font-semibold'
                 onClick={toggleNavVisibility}
               >
                 Home
@@ -51,7 +51,7 @@ export default function Header () {
             <li>
               <Link
                 to='about/'
-                className=' text-color-primary hover:text-color-emphasis font-semibold'
+                className='text-color-primary hover:text-color-emphasis font-semibold'
                 onClick={toggleNavVisibility}
               >
                 About
@@ -60,18 +60,17 @@ export default function Header () {
             <li>
               <Link
                 to='quiz/'
-                className=' text-color-primary hover:text-color-emphasis font-semibold'
+                className='text-color-primary hover:text-color-emphasis font-semibold'
                 onClick={toggleNavVisibility}
               >
                 Quiz
               </Link>
             </li>
-
           </ul>
         </nav>
 
         <button
-          className='sm:hidden text-color-primary '
+          className='sm:hidden text-color-primary'
           onClick={toggleNavVisibility}
           ref={themeButtonRef}
         >
@@ -80,8 +79,6 @@ export default function Header () {
 
         <ToggleThemeButton />
       </div>
-
     </header>
-
   )
 }

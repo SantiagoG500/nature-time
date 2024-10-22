@@ -33,6 +33,11 @@ export function useQuiz () {
   const answeredQuestions = quizQuestions.getUserAnswers()
     .filter(ans => ans).length
 
+  const correctAnswers = quizQuestions.getUserAnswers()
+    .filter(ans => ans.correct)
+  const wrongAnswers = quizQuestions.getUserAnswers()
+    .filter(ans => !ans.correct)
+
   const allQuestionsAnswered = answeredQuestions === length
   const atFinalQuestion = index + 1 === length
 
@@ -47,6 +52,8 @@ export function useQuiz () {
     answeredQuestions,
     allQuestionsAnswered,
     atFinalQuestion,
+    correctAnswers,
+    wrongAnswers,
 
     prevQuestion,
     nextQuestion,

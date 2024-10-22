@@ -27,9 +27,7 @@ export default function QuizPagination ({
   }
   return (
     <section className='flex gap-8 h-min w-min'>
-      <p className='text-color-primary'>{JSON.stringify(atFinalQuestion)}</p>
-      <p className='text-color-primary'>{JSON.stringify(allQuestionsAnswered)}</p>
-      <p className='text-color-primary'> result {JSON.stringify(atFinalQuestion && !allQuestionsAnswered)}</p>
+
       <button
         className='
         flex items-center justify-center
