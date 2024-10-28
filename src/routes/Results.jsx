@@ -1,77 +1,86 @@
-import { useContext, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import { quizContext } from '../context/QuizInfo'
+import { DoughnutChart } from '../components/DoughnutChart'
+import UserAnswers from '../components/UserAnswers'
+import { useNavigate } from 'react-router-dom'
 
 export default function Results () {
   const [showCorrectAnswers, setShowCorrectAnswers] = useState(true)
+  const navigate = useNavigate()
 
   const {
     length,
-    quizQuestions,
     correctAnswers,
-    wrongAnswers
+    wrongAnswers,
+    allQuestionsAnswered
   } = useContext(quizContext)
 
-  const userQuestions = quizQuestions.getUserAnswers()
-  console.log({ userQuestions, correctAnswers, wrongAnswers })
+  const data = {
+    labels: ['Correct', 'Wrong'],
+    datasets: [
+      {
+        label: 'Quiz Results',
+        data: [correctAnswers.length, wrongAnswers.length],
+        backgroundColor: [
+          '#22c55e',
+          '#ef4444'
+        ]
+      }
+    ]
+  }
 
   const answers = showCorrectAnswers ? correctAnswers : wrongAnswers
 
+  useEffect(() => {
+    if (!allQuestionsAnswered) navigate('/')
+    console.log('asdf')
+  }, [])
+
   return (
-    <section className='mt-7 text-lg max-w-screen-md m-auto pl-7'>
-      <h1 className='text-color-primary text-xl font-extralight'>
-        Results
-      </h1>
+    <section className='mt-8 text-lg max-w-screen-md m-auto pl-7'>
 
-      <div className='mt-9 mb-5'>
-        <h2 className='text-color-primary text-lg'>
-          <span className='font-bold'>{correctAnswers.length} / {length}</span> correct answers
-        </h2>
+      <header>
+        <div className='flex justify-center  w-full h-full min-h-72 '>
+          <DoughnutChart chartData={data} />
+        </div>
 
-      </div>
+        <div className=''>
+          <h1 className='mt-9 text-color-primary text-xl font-extralight'>
+            Results
+          </h1>
+          <h2 className='text-color-primary text-lg'>
+            <span className='font-bold'>{correctAnswers.length} / {length}</span> correct answers
+          </h2>
+        </div>
+      </header>
+
       <div className='flex justify-center gap-7 '>
-        <button
-          className='
-            text-color-primary hover:text-color-emphasis-500 hover:underline
-          '
-          onClick={() => setShowCorrectAnswers(true)}
-        >
-          Correct Answers
-        </button>
-        <button
-          className='
-            text-color-primary hover:text-color-emphasis-500 hover:underline
-          '
-          onClick={() => setShowCorrectAnswers(false)}
-        >
-          incorrect Answers
-        </button>
-      </div>
 
-      <div className='flex flex-col gap-6 mt-7'>
         {
-          answers.map((ans, index) => {
-            const { question, correctAnswer, userAnswer } = ans
-            return (
-              <div key={index} className='flex flex-col gap-5 w-11/12 p-5 bg-background-secondary rounded'>
-                <p className='text-color-primary'> {question} </p>
-                <p className='text-color-emphasis-400'> <span className='font-bold'>Correct Answer: </span> {correctAnswer} </p>
-                {
-                  !showCorrectAnswers && <p className='text-red-400'> <span className='font-bold'>your answer</span> {userAnswer} </p>
-                }
-              </div>
-            )
-          })
+          wrongAnswers.length !== 0 &&
+            <>
+              <button
+                className='
+                text-color-primary hover:text-color-emphasis-500 hover:underline
+                '
+                onClick={() => setShowCorrectAnswers(false)}
+              >
+                incorrect Answers
+              </button>
+              <button
+                className='
+                  text-color-primary hover:text-color-emphasis-500 hover:underline
+                '
+                onClick={() => setShowCorrectAnswers(true)}
+              >
+                Correct Answers
+              </button>
+            </>
         }
       </div>
+
+      <UserAnswers answers={answers} showCorrectAnswers={showCorrectAnswers} />
 
     </section>
   )
 }
-
-// return (
-//   <>
-//     <h1 className='text-color-primary text-4xl text-center font-bold mt-9 mb-9'>Well done</h1>
-//     <p className='text-color-primary text-center text-base '>It seems you've reached the end.</p>
-//     <p className='text-color-primary text-center text-base '>The feature of see your results it's not implemented yet!</p>
-//   </>
-// )

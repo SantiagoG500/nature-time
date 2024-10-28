@@ -7,8 +7,7 @@ export default function QuizPagination ({
   endOfQuiz,
   prevQuestion,
   nextQuestion,
-  atFinalQuestion,
-  allQuestionsAnswered
+  atFinalQuestion
 }) {
   const navigate = useNavigate()
 
@@ -17,11 +16,8 @@ export default function QuizPagination ({
   }
 
   const next = () => {
-    console.log('asdf')
-
     if (atFinalQuestion) {
       navigate('/results')
-      console.log('end')
     }
     nextQuestion()
   }

@@ -41,6 +41,9 @@ export function useQuiz () {
   const allQuestionsAnswered = answeredQuestions === length
   const atFinalQuestion = index + 1 === length
 
+  const totalCorrectAnswers = correctAnswers.length
+  const totalWrongAnswers = wrongAnswers.length
+
   const endOfQuiz = () => !allQuestionsAnswered && atFinalQuestion
 
   return {
@@ -54,6 +57,9 @@ export function useQuiz () {
     atFinalQuestion,
     correctAnswers,
     wrongAnswers,
+
+    totalCorrectAnswers,
+    totalWrongAnswers,
 
     prevQuestion,
     nextQuestion,
