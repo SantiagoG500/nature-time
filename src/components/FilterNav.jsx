@@ -1,10 +1,16 @@
+import { useContext } from 'react'
+import { themeContext } from '../context/Theme'
+
 export function FilterNav ({ regionNames, currentRegion, updateRegion }) {
+  const { themeDark } = useContext(themeContext)
+  const emphasisColorText = themeDark ? 'text-color-emphasis-300' : 'text-color-emphasis-700'
+
   return (
     <nav className='
-      flex justify-center gap-5 p-4
-      ñmd:max-w-screen-sm
+      flex justify-evenly gap-5 p-4
+      md:max-w-screen-sm
+      sm:pl-0
       m-auto
-      pl-24
       bg-background-secondary
       overflow-auto
       rounded
@@ -16,7 +22,7 @@ export function FilterNav ({ regionNames, currentRegion, updateRegion }) {
             key={regionName}
             className={`
               font-semibold 
-              ${currentRegion === regionName ? 'text-color-emphasis-600' : 'text-color-primary'}
+              ${currentRegion === regionName ? emphasisColorText : 'text-color-primary'}
             `}
             onClick={() => updateRegion(regionName)}
           >

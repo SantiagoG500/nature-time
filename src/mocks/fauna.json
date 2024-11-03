@@ -4,31 +4,41 @@
       "name": "Jaguar",
       "scientificName": "Panthera onca",
       "weight": "50 - 100 kg",
-      "alimentation": "Carnívoro; se alimenta de mamíferos grandes como tapires, capibaras, y caimanes"
+      "alimentation": "Carnívoro; se alimenta de mamíferos grandes como tapires, capibaras, y caimanes",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Jaguar_%28Panthera_onca_palustris%29_male_Three_Brothers_River_2.jpg/1024px-Jaguar_%28Panthera_onca_palustris%29_male_Three_Brothers_River_2.jpg",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Jaguar_%28Panthera_onca_palustris%29_male_Three_Brothers_River_2.jpg/320px-Jaguar_%28Panthera_onca_palustris%29_male_Three_Brothers_River_2.jpg"
     },
     {
       "name": "Delfín rosado",
       "scientificName": "Inia geoffrensis",
       "weight": "85 - 160 kg",
-      "alimentation": "Carnívoro; consume peces, crustáceos y pequeños animales acuáticos"
+      "alimentation": "Carnívoro; consume peces, crustáceos y pequeños animales acuáticos",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Amazonas-Flussdelfin_Orinoko6.jpg/320px-Amazonas-Flussdelfin_Orinoko6.jpg",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Amazonas-Flussdelfin_Orinoko6.jpg/320px-Amazonas-Flussdelfin_Orinoko6.jpg"
     },
     {
       "name": "Mono tití",
-      "scientificName": "Saguinus spp.",
+      "scientificName": "Saguinus oedipus",
       "weight": "300 - 500 gramos",
-      "alimentation": "Omnívoro; consume frutas, insectos, pequeños vertebrados y néctar"
+      "alimentation": "Omnívoro; consume frutas, insectos, pequeños vertebrados y néctar",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/9/90/Lisztaeffchen1.png",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Lisztaeffchen1.png/320px-Lisztaeffchen1.png"
     },
     {
       "name": "Anaconda",
       "scientificName": "Eunectes murinus",
       "weight": "Hasta 250 kg",
-      "alimentation": "Carnívora; se alimenta de peces, mamíferos, aves e incluso caimanes"
+      "alimentation": "Carnívora; se alimenta de peces, mamíferos, aves e incluso caimanes",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Sucuri_verde.jpg/1024px-Sucuri_verde.jpg",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Sucuri_verde.jpg/320px-Sucuri_verde.jpg"
     },
     {
-      "name": "Guacamayo azul",
+      "name": "Guacamayo azul y amarillo",
       "scientificName": "Ara ararauna",
       "weight": "1 - 1.5 kg",
-      "alimentation": "Frugívoro; se alimenta de frutas, nueces y semillas"
+      "alimentation": "Frugívoro; se alimenta de frutas, nueces y semillas",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Ara_ararauna_Luc_Viatour.jpg/995px-Ara_ararauna_Luc_Viatour.jpg",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Ara_ararauna_Luc_Viatour.jpg/311px-Ara_ararauna_Luc_Viatour.jpg"
     }
   ],
   "Orinoquía": [
@@ -36,31 +46,41 @@
       "name": "chigüiro",
       "scientificName": "Hydrochoerus hydrochaeris",
       "weight": "35 - 65 kg",
-      "alimentation": "35 - 65 kg"
+      "alimentation": "35 - 65 kg",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Capivara%28Hydrochoerus_hydrochaeris%29.jpg/1024px-Capivara%28Hydrochoerus_hydrochaeris%29.jpg",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Capivara%28Hydrochoerus_hydrochaeris%29.jpg/320px-Capivara%28Hydrochoerus_hydrochaeris%29.jpg"
     },
     {
       "name": "Caimán del Orinoco",
       "scientificName": "Crocodylus intermedius",
       "weight": "35 - 65 kg",
-      "alimentation": "380 - 450 kg"
+      "alimentation": "380 - 450 kg",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Croc_inter.jpg/1024px-Croc_inter.jpg",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Croc_inter.jpg/320px-Croc_inter.jpg"
     },
     {
       "name": "Armadillo",
       "scientificName": "Dasypus novemcinctus",
       "weight": "4 - 8 kg",
-      "alimentation": "380 - 450 kg"
+      "alimentation": "380 - 450 kg",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Armadillo2.jpg/1024px-Armadillo2.jpg",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Armadillo2.jpg/320px-Armadillo2.jpg"
     },
     {
       "name": "Aguila Harpía",
       "scientificName": "Harpia harpyja",
       "weight": "6 - 10 kg",
-      "alimentation": "380 - 450 kg"
+      "alimentation": "380 - 450 kg",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Harpia-harpyja-001.jpg/1024px-Harpia-harpyja-001.jpg",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Harpia_harpyja_-falconry_-head-8a.jpg/275px-Harpia_harpyja_-falconry_-head-8a.jpg"
     },
     {
       "name": "Venado de cola blanca",
       "scientificName": "Odocoileus virginianus",
       "weight": "6 - 10 kg",
-      "alimentation": "50 - 120 kg"
+      "alimentation": "50 - 120 kg",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/White-tailed_deer.jpg/1011px-White-tailed_deer.jpg",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/White-tailed_deer.jpg/316px-White-tailed_deer.jpg"
     }
   ],
   "Pácifico": [
@@ -68,25 +88,33 @@
       "name": "Ballena jorobada",
       "scientificName": "Megaptera novaeangliae",
       "weight": "40 T",
-      "alimentation": "40 T"
+      "alimentation": "40 T",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/6/61/Humpback_Whale_underwater_shot.jpg",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Humpback_Whale_underwater_shot.jpg/320px-Humpback_Whale_underwater_shot.jpg"
     },
     {
       "name": "Rana de cristal",
       "scientificName": "Hyalinobatrachium fleischmanni",
       "weight": "1 - 2 g",
-      "alimentation": "40 T"
+      "alimentation": "40 T",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Hyalinobatrachium_fleischmanni.jpg",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Hyalinobatrachium_fleischmanni.jpg"
     },
     {
       "name": "Tortuga carey",
       "scientificName": "Eretmochelys imbricata",
       "weight": "80 kg",
-      "alimentation": "40 T"
+      "alimentation": "40 T",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Tortuga_carey_%28Eretmochelys_imbricata%29%2C_parque_nacional_Ras_Muhammad%2C_Egipto%2C_2022-03-28%2C_DD_56.jpg/1024px-Tortuga_carey_%28Eretmochelys_imbricata%29%2C_parque_nacional_Ras_Muhammad%2C_Egipto%2C_2022-03-28%2C_DD_56.jpg",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Tortuga_carey_%28Eretmochelys_imbricata%29%2C_parque_nacional_Ras_Muhammad%2C_Egipto%2C_2022-03-28%2C_DD_56.jpg/320px-Tortuga_carey_%28Eretmochelys_imbricata%29%2C_parque_nacional_Ras_Muhammad%2C_Egipto%2C_2022-03-28%2C_DD_56.jpg"
     },
     {
       "name": "Perezoso de dos dedos",
       "scientificName": "Choloepus didactylus",
       "weight": "4 - 8 kg",
-      "alimentation": "40 T"
+      "alimentation": "40 T",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Choloepus_didactylus_2_-_Buffalo_Zoo.jpg/1191px-Choloepus_didactylus_2_-_Buffalo_Zoo.jpg",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Choloepus_didactylus_2_-_Buffalo_Zoo.jpg/279px-Choloepus_didactylus_2_-_Buffalo_Zoo.jpg"
     }
   ],
   "Caribe": [
@@ -94,25 +122,33 @@
       "name": "Manatí",
       "scientificName": "Trichechus manatus",
       "weight": "400 - 600 kg",
-      "alimentation": "40 T"
+      "alimentation": "40 T",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Underwater_photography_of_mammal_manatee.jpg/1024px-Underwater_photography_of_mammal_manatee.jpg",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Underwater_photography_of_mammal_manatee.jpg/320px-Underwater_photography_of_mammal_manatee.jpg"
     },
     {
       "name": "Iguana verde",
       "scientificName": "Iguana iguana",
       "weight": "4 - 5  kg",
-      "alimentation": "40 T"
+      "alimentation": "40 T",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Polish_20230102_131307806_%281%29.jpg/632px-Polish_20230102_131307806_%281%29.jpg",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Polish_20230102_131307806_%281%29.jpg/316px-Polish_20230102_131307806_%281%29.jpg"
     },
     {
-      "name": "Flamenco rosado",
+      "name": "Mono Aullador Rojo",
       "scientificName": "Alouatta seniculus",
       "weight": "5 - 10 kg",
-      "alimentation": "40 T"
+      "alimentation": "40 T",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/0/03/Alouatta_seniculus.jpg",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/0/03/Alouatta_seniculus.jpg"
     },
     {
       "name": "Tigrillo",
       "scientificName": "Leopardus wiedii",
       "weight": "2 - 4 kg",
-      "alimentation": "40 T"
+      "alimentation": "40 T",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Margaykat_Leopardus_wiedii.jpg/1024px-Margaykat_Leopardus_wiedii.jpg",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Margaykat_Leopardus_wiedii.jpg/320px-Margaykat_Leopardus_wiedii.jpg"
     }
   ],
   "Andes": [
@@ -120,13 +156,17 @@
       "name": "Cóndor de los Andes",
       "scientificName": "Vultur gryphus",
       "weight": "10 - 15 kg",
-      "alimentation": "40 T"
+      "alimentation": "40 T",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/C%C3%B3ndor_sobrevolando_el_Cerro_Provincia_en_Santiago_de_Chile.jpg/1024px-C%C3%B3ndor_sobrevolando_el_Cerro_Provincia_en_Santiago_de_Chile.jpg",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/C%C3%B3ndor_sobrevolando_el_Cerro_Provincia_en_Santiago_de_Chile.jpg/320px-C%C3%B3ndor_sobrevolando_el_Cerro_Provincia_en_Santiago_de_Chile.jpg"
     },
     {
       "name": "Oso de anteojos",
       "scientificName": "Tremarctos ornatus",
       "weight": "100 - 175 kg",
-      "alimentation": "40 T"
+      "alimentation": "40 T",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/2017-09-24_AT_Wien_13_Hietzing%2C_Tiergarten_Sch%C3%B6nbrunn%2C_Tremarctos_ornatus_%2832669305008%29.jpg/1024px-2017-09-24_AT_Wien_13_Hietzing%2C_Tiergarten_Sch%C3%B6nbrunn%2C_Tremarctos_ornatus_%2832669305008%29.jpg",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/2017-09-24_AT_Wien_13_Hietzing%2C_Tiergarten_Sch%C3%B6nbrunn%2C_Tremarctos_ornatus_%2832669305008%29.jpg/320px-2017-09-24_AT_Wien_13_Hietzing%2C_Tiergarten_Sch%C3%B6nbrunn%2C_Tremarctos_ornatus_%2832669305008%29.jpg"
     }
 
   ]
