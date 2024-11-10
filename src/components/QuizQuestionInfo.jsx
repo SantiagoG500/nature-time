@@ -17,7 +17,6 @@ export default function QuizQuestionInfo ({ question, img, indexInfo }) {
           Question {index + 1} / {length}
         </h2>
         <p className='text-color-primary mt-2'>
-          {/* Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus pariatur architecto quia, ut aut veniam! Quis, quas nostrum officiis rerum ipsam similique error nobis quaerat aliquid et culpa cumque ipsum! */}
           {question}
         </p>
 

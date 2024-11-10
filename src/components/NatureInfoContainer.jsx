@@ -7,7 +7,7 @@ export default function NatureInfoContainer ({ region }) {
     <>
       <div key={regionName} className='pb-4 pt-4'>
         <h1
-          className='text-color-primary text-3xl text-center font-bold mb-9'
+          className='text-color-primary text-3xl text-center font-bold mb-9 mt-9'
         >
           {regionName}
         </h1>

@@ -1,9 +1,13 @@
 import { Link } from 'react-router-dom'
-import { useRef } from 'react'
+import { useContext, useRef } from 'react'
 import ToggleThemeButton from './ToggleThemeButton'
 import { Menu } from 'lucide-react'
+import { themeContext } from '../context/Theme'
 
 export default function Header () {
+  const { themeDark } = useContext(themeContext)
+  const emphasisColorText = themeDark ? 'text-color-emphasis-400' : 'text-color-emphasis-500'
+
   const themeButtonRef = useRef(null)
 
   const navRef = useRef(undefined)
@@ -65,7 +69,7 @@ export default function Header () {
             <li>
               <Link
                 to='/'
-                className='text-color-primary hover:text-color-emphasis font-semibold'
+                className={`text-color-primary hover:${emphasisColorText} font-semibold`}
                 onClick={toggleNavVisibility}
               >
                 Home
@@ -74,16 +78,16 @@ export default function Header () {
             <li>
               <Link
                 to='about/'
-                className='text-color-primary hover:text-color-emphasis font-semibold'
+                className={`text-color-primary hover:${emphasisColorText} font-semibold`}
                 onClick={toggleNavVisibility}
               >
-                About
+                Acerca de
               </Link>
             </li>
             <li>
               <Link
                 to='quiz/'
-                className='text-color-primary hover:text-color-emphasis font-semibold'
+                className={`text-color-primary hover:${emphasisColorText} font-semibold`}
                 onClick={toggleNavVisibility}
               >
                 Quiz
