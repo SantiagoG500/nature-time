@@ -47,7 +47,10 @@ export default function WikiPage () {
             {title}
           </h1>
         </header>
-        <section className='flex flex-col gap-6 leading-7 text-color-primary text-wrap text-sm sm:text-base' ref={sectionRef}> </section>
+        <section
+          className='flex flex-col gap-6 leading-7 text-color-primary text-wrap text-sm sm:text-base wiki-content'
+          ref={sectionRef}
+        />
       </section>
     </>
   )

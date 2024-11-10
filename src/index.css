@@ -41,6 +41,10 @@
   --color-text-secondary-lighter: 214, 211, 209;
 }
 
+.wiki-content sup {
+  z-index: -10;
+}
+
 /* --main-color-50: 250, 250, 249;
 --main-color-100: 245, 245, 244;
 --main-color-200: 231, 229, 228;
